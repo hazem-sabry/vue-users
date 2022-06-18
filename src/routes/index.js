@@ -7,6 +7,14 @@ const routes = [
     component: Home,
     alias: "/users",
   },
+  {
+    path: "/login",
+    component: () => import("@/pages/login.vue"),
+  },
+  {
+    path: "/register",
+    component: () => import("@/pages/register.vue"),
+  },
 ];
 
 const router = createRouter({

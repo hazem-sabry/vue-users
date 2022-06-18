@@ -6,6 +6,12 @@ module.exports = {
         primary: {
           DEFAULT: "#2c3e50",
         },
+        tertiary: {
+          DEFAULT: "#95a5a6",
+        },
+        danger: {
+          DEFAULT: "#e74c3c",
+        },
       },
       spacing: {
         "2px": "2px",

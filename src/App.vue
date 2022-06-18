@@ -1,9 +1,17 @@
 <template>
-  <router-view />
+  <navigation />
+  <div class="container">
+    <router-view />
+  </div>
 </template>
 
 <script>
+import Navigation from "@/components/TheNavigation.vue";
+
 export default {
   name: "App",
+  components: {
+    Navigation,
+  },
 };
 </script>

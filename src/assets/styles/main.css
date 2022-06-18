@@ -8,3 +8,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.container {
+  @apply mx-auto px-xs lg:px-0;
+
+  max-width: 1200px;
+}
