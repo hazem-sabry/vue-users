@@ -21,11 +21,18 @@
 
 <script>
 import Cookies from "js-cookie";
+import { mapMutations } from "vuex";
 
 export default {
   name: "TheNavigation",
   methods: {
+    ...mapMutations({
+      setToken: "auth/setToken",
+      setLoginStatus: "auth/setLoginStatus",
+    }),
     logout() {
+      this.setToken(null);
+      this.setLoginStatus(false);
       Cookies.remove("token");
       this.$router.push("login");
     },
