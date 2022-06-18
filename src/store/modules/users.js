@@ -31,7 +31,6 @@ export default {
       state.users = users;
     },
     setCurrentPage(state, page) {
-      console.log(page);
       state.page = page;
     },
     setTotal(state, total) {
